@@ -1,0 +1,8 @@
+{
+  "name": "Kiekies Fashion World",
+  "description": "The Neo-Lavender Flagship. Imported Luxury curated for global citizens. Architected by June Studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
