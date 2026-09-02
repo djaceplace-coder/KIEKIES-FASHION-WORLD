@@ -10,32 +10,37 @@ export default function NewArrivalsMarquee() {
   const newProducts = allProducts.filter(p => p.badge === 'New Drop' || p.badge === 'NEW');
   const mockNewProducts = FEATURED_PRODUCTS.filter(p => p.badge === 'NEW');
   
-  const displayProducts = allProducts.length > 0 ? (newProducts.length > 0 ? newProducts : allProducts.slice(0, 5)) : (mockNewProducts.length > 0 ? mockNewProducts : FEATURED_PRODUCTS);
+  const displayProducts = allProducts.length > 0 
+    ? (newProducts.length > 0 ? newProducts : allProducts.slice(0, 5)) 
+    : (mockNewProducts.length > 0 ? mockNewProducts : FEATURED_PRODUCTS);
 
-  // Duplicate items for seamless infinite scroll (2 sets for perfect -50% loop)
-  const marqueeItems = displayProducts;
+  // Guarantee the marquee array is long enough to fill ultra-wide screens.
+  const minItems = 20; 
+  const repetitions = Math.max(4, Math.ceil(minItems / displayProducts.length));
+  const marqueeItems = Array(repetitions).fill(displayProducts).flat();
 
   const MarqueeContent = () => (
-    <div className="flex gap-6 pr-6">
+    <div className="flex gap-4 md:gap-6 pr-4 md:pr-6 shrink-0">
       {marqueeItems.map((item, idx) => (
         <Link 
           to={`/product/${item.sku}`} 
           key={`${item.sku}-${idx}`}
-          className="relative w-48 md:w-64 aspect-[3/4] rounded-2xl overflow-hidden shrink-0 group/card block bg-[#1C1A20] border border-white/5"
+          className="relative w-40 md:w-64 aspect-[3/4] rounded-2xl overflow-hidden shrink-0 group/card block bg-[#1C1A20] border border-white/5"
         >
-          <img referrerPolicy="no-referrer" 
+          <img 
+            referrerPolicy="no-referrer"
             src={item.imageMain} 
             alt={item.title} 
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-80 group-hover/card:opacity-100"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
           
-          <div className="absolute bottom-4 left-4 right-4">
-            <div className="text-[10px] font-bold uppercase tracking-widest text-brand-violet mb-1">
+          <div className="absolute bottom-4 left-3 right-3 md:left-4 md:right-4 pointer-events-none">
+            <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-brand-violet mb-1">
               New Arrival
             </div>
-            <h3 className="text-sm md:text-base font-bold text-white truncate">{item.title}</h3>
-            <div className="text-xs md:text-sm font-bold text-white/70 mt-1">
+            <h3 className="text-xs md:text-base font-bold text-white truncate">{item.title}</h3>
+            <div className="text-[10px] md:text-sm font-bold text-white/70 mt-1">
               {formatPrice(item.price[currency], currency)}
             </div>
           </div>
@@ -60,7 +65,7 @@ export default function NewArrivalsMarquee() {
           transition={{
             repeat: Infinity,
             ease: "linear",
-            duration: 25,
+            duration: repetitions * 5, // Scale speed dynamically based on content length
           }}
         >
           <MarqueeContent />

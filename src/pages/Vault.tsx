@@ -32,7 +32,7 @@ export default function Vault() {
     <div className="min-h-screen bg-obsidian text-white flex flex-col items-center justify-center px-4 sm:px-6 relative overflow-hidden">
       
       {/* Background Ambience */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/kiekies_37/800/1000')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent"></div>
 
       <motion.div 

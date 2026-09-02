@@ -159,7 +159,7 @@ export default function Shop() {
       {/* S1: Cinematic Header */}
       <div className={`relative h-[40vh] flex items-end p-8 md:p-12 overflow-hidden mb-8 lg:mb-16 ${styles.headerBg}`}>
         <div 
-          className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-40 mix-blend-overlay bg-fixed"
+          className="absolute inset-0 bg-[url('https://picsum.photos/seed/kiekies_32/800/1000')] bg-cover bg-center opacity-40 mix-blend-overlay bg-fixed"
         />
         <h1 ref={headerRef} className="text-6xl md:text-9xl font-black text-white relative z-10 uppercase tracking-tighter flex overflow-hidden">
           {title.split('').map((char, i) => (
@@ -256,7 +256,7 @@ export default function Shop() {
           {/* S4: Fabric & Craftsmanship Macro */}
           <div className={`w-full h-64 sm:h-96 relative mt-16 sm:mt-24 overflow-hidden group border border-obsidian/10 ${category?.toLowerCase() === 'men' ? 'rounded-sm' : category?.toLowerCase() === 'kids' ? 'rounded-[32px]' : 'rounded-squircle'}`}>
             <img referrerPolicy="no-referrer" 
-              src="https://images.unsplash.com/photo-1579737233777-742e956e18f2?auto=format&fit=crop&q=80&w=2000" 
+              src="https://picsum.photos/seed/kiekies_33/800/1000" 
               alt="Silk Macro" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
             />

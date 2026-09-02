@@ -84,7 +84,7 @@ export default function Sourcing() {
             
             <div className="w-full md:w-1/2 pl-16 md:pl-0">
               <div className="bg-[#1C1A20] p-4 rounded-squircle shadow-tactile-inset border border-white/5 relative group overflow-hidden">
-                <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800" alt="Selection" className="w-full aspect-[4/3] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700" />
+                <img referrerPolicy="no-referrer" src="https://picsum.photos/seed/kiekies_34/800/1000" alt="Selection" className="w-full aspect-[4/3] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-brand-violet/20 mix-blend-overlay"></div>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Sourcing() {
                   <Anchor className="w-8 h-8 text-brand-violet mb-2" />
                   <div className="text-xs font-bold uppercase tracking-widest text-white">Logistics Secured</div>
                 </div>
-                <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1586528116311-ad8ed7c1590e?auto=format&fit=crop&q=80&w=800" alt="Import Logistics" className="w-full aspect-[4/3] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700" />
+                <img referrerPolicy="no-referrer" src="https://picsum.photos/seed/kiekies_35/800/1000" alt="Import Logistics" className="w-full aspect-[4/3] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700" />
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function Sourcing() {
                     <span className="text-white font-black text-xs uppercase tracking-widest text-center">Verified<br/>Authentic</span>
                   </motion.div>
                 </div>
-                <img referrerPolicy="no-referrer" src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?auto=format&fit=crop&q=80&w=800" alt="Quality Check" className="w-full aspect-[4/3] object-cover rounded-2xl opacity-60 group-hover:scale-105 transition-transform duration-700" />
+                <img referrerPolicy="no-referrer" src="https://picsum.photos/seed/kiekies_36/800/1000" alt="Quality Check" className="w-full aspect-[4/3] object-cover rounded-2xl opacity-60 group-hover:scale-105 transition-transform duration-700" />
               </div>
             </div>
           </div>

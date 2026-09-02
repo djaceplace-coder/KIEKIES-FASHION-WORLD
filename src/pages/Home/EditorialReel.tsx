@@ -3,11 +3,11 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 
 const REELS = [
-  { id: 1, image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&q=80&w=600', items: 2 },
-  { id: 2, image: 'https://images.unsplash.com/photo-1550614000-4b95d466f914?auto=format&fit=crop&q=80&w=600', items: 1 },
-  { id: 3, image: 'https://images.unsplash.com/photo-1588117305388-c2631a279f82?auto=format&fit=crop&q=80&w=600', items: 3 },
-  { id: 4, image: 'https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80&w=600', items: 2 },
-  { id: 5, image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=600', items: 4 },
+  { id: 1, image: 'https://picsum.photos/seed/kiekies_16/800/1000', items: 2 },
+  { id: 2, image: 'https://picsum.photos/seed/kiekies_17/800/1000', items: 1 },
+  { id: 3, image: 'https://picsum.photos/seed/kiekies_18/800/1000', items: 3 },
+  { id: 4, image: 'https://picsum.photos/seed/kiekies_19/800/1000', items: 2 },
+  { id: 5, image: 'https://picsum.photos/seed/kiekies_20/800/1000', items: 4 },
 ];
 
 export default function EditorialReel() {

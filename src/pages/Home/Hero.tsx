@@ -40,7 +40,7 @@ export default function Hero() {
           {/* Negative top margin and z-index for breakout effect */}
           <div className="relative -mt-24 lg:-mt-32 w-full max-w-[500px] z-20">
             <img referrerPolicy="no-referrer" 
-              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=1000" 
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=800" 
               alt="Model" 
               className="w-full h-auto object-contain drop-shadow-2xl mix-blend-plus-lighter pointer-events-none"
             />

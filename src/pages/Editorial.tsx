@@ -7,7 +7,7 @@ const LOOKS = [
     id: 1,
     title: 'Lagos Nights in Lilac',
     category: 'Style Guide',
-    image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=1200',
+    image: 'https://picsum.photos/seed/kiekies_13/800/1000',
     desc: 'How to transition the Milan Silk set from a daytime brunch to an evening gala.',
     sku: 'KFW-2601-LILAC'
   },
@@ -15,7 +15,7 @@ const LOOKS = [
     id: 2,
     title: 'The Brutalist Tailor',
     category: 'Men’s Atelier',
-    image: 'https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=1200',
+    image: 'https://picsum.photos/seed/kiekies_14/800/1000',
     desc: 'Sharp edges, Obsidian tones. Discover the architecture of the new Men’s suit.',
     sku: 'KMW-1002-OBSIDIAN'
   },
@@ -23,7 +23,7 @@ const LOOKS = [
     id: 3,
     title: 'Playground to Palace',
     category: 'Kids’ Edit',
-    image: 'https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&q=80&w=1200',
+    image: 'https://picsum.photos/seed/kiekies_15/800/1000',
     desc: 'Durability meets luxury. The fabrics defining the new children’s collection.',
     sku: 'KKW-304-CREAM'
   }
